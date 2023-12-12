@@ -72,13 +72,8 @@ stations = pd.read_csv('Londons_fire_stations.csv')
 st.sidebar.image('lfb.png')
 st.sidebar.title("London FB: A ML Project")
 
-
 pages = ["The London FD", 'Datasets', 'Data Exploration',  "Data Visualisation", 'Methodology', "Modelling", 'Results', 'Conclusion']
 page = st.sidebar.radio("Go to", pages)
-st.sidebar.write('**Made by:**')
-st.sidebar.write('**Jules Astier**')
-st.sidebar.write('**Miguel Dominguez**')
-
 
 if page == pages[0]:
     st.image('website_tile-grenfell_tower_fire_scene_002.jpg')
@@ -87,7 +82,6 @@ if page == pages[0]:
     'Our aim is to try accurately predict the travel times of a fire engine. This can be used for the simple purpose of knowing how long the journey will take when a caller calls in, or something more complex.'
     'We want to try find the optimal place to build a new firestation and predict how much time can be saved through this new fire station. The financial savings this would provide are hard to predict as there is a cost to fire damage and human injury.'
     'Improving the response times to an incident would objectively reduce these, but by how much?'
-    
 
 if page == pages[1]:
     st.image('1343_case_study_webpage_headers_desktop_1920x850_batch_3_london_fire.jpg')
