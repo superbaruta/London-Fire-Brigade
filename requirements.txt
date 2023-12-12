@@ -7,3 +7,4 @@ geopandas==0.10.2
 scikit-learn==1.0.2
 shapely==1.8.0
 alguna_lib
+GEOS 3.10.0.
