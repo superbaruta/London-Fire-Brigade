@@ -1,1 +1,9 @@
 matplotlib
+pandas
+numpy
+seaborn
+joblib
+geopandas
+sklearn
+shapely
+os
