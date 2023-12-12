@@ -214,7 +214,8 @@ if page == pages[2]:
     for i in df['IncidentGroup'].unique():
         dic[i] = (df[df['IncidentGroup'] == i].value_counts('DateOfCall').sort_index().reindex(df['DateOfCall'].unique()) / months).values
     pd.DataFrame(dic).plot(ax=ax, kind='bar', stacked=True)
-    ax.set_xticks(range(12), df['DateOfCall'].unique())
+    ax.set_xticks(range(len(df['DateOfCall'].unique())))
+    ax.set_xticklabels(df['DateOfCall'].unique())
     ax.set_title('Incident distribution throughout the year (adjusted)', pad=10)
     ax.set_ylabel('Incidents (over 3yr span)')
     ax.set_xlabel('Month')
